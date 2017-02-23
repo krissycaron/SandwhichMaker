@@ -7,35 +7,51 @@
 	<h1>Create Yo' Which'</h1>
 
 	<form>
+		<div id="breadDivID">
 		<h4>Bread</h4>
-		<input type="checkbox" id="wheat" class="bread" name="bread">Wheat
-		<input type="checkbox" id="white" class="bread" name="bread">White 
-		<input type="checkbox" id="italianHerb" class="bread" name="bread">Italian Herbs 
-		<input type="checkbox" id="sourdough" class="bread" name="bread">Sourdough
+			<input type="checkbox" id="wheat" class="bread" name="bread">Wheat
+			<input type="checkbox" id="white" class="bread" name="bread">White 
+			<input type="checkbox" id="italianHerb" class="bread" name="bread">Italian Herbs 
+			<input type="checkbox" id="sourdough" class="bread" name="bread">Sourdough
+		</div>
 
-		<h4>Meat</h4>
-		<input type="checkbox" id="ham" class="meat" name="meat">Ham
-		<input type="checkbox" id="turkey" class="meat" name="meat">Turkey
-		<input type="checkbox" id="roastbeef" class="meat" name="meat">Roast Beef
-		<input type="checkbox" id="salami" class="meat" name="meat">Salami
+		<div id="meatDivID">
+			<h4>Meat</h4>
+			<input type="checkbox" id="ham" class="meat" name="meat">Ham
+			<input type="checkbox" id="turkey" class="meat" name="meat">Turkey
+			<input type="checkbox" id="roastbeef" class="meat" name="meat">Roast Beef
+			<input type="checkbox" id="salami" class="meat" name="meat">Salami
+		</div>
 
-		<h4>Veggies</h4>
-		<input type="checkbox" id="tomato" class="veggie" name="veggie">Tomato
-		<input type="checkbox" id="pepper" class="veggie" name="veggie">Peppers
-		<input type="checkbox" id="onions" class="veggie" name="veggie">Onions
-		<input type="checkbox" id="pickle" class="veggie" name="veggie">Pickles
+		<div id="veggieDivId">
+			<h4>Veggies</h4>
+			<input type="checkbox" id="tomato" class="veggie" name="veggie">Tomato
+			<input type="checkbox" id="pepper" class="veggie" name="veggie">Peppers
+			<input type="checkbox" id="onions" class="veggie" name="veggie">Onions
+			<input type="checkbox" id="pickle" class="veggie" name="veggie">Pickles
+		</div>
 
-		<h4>Cheese</h4>
-		<input type="checkbox" id="american" class="cheese" name="cheese">American
-		<input type="checkbox" id="cheddar" class="cheese" name="cheese">Cheddar
-		<input type="checkbox" id="swiss" class="cheese" name="cheese">Swiss
-		<input type="checkbox" id="gouda" class="cheese" name="cheese">Gouda
-		
-		
+		<div id="cheeseDivId">
+			<h4>Cheese</h4>
+			<input type="checkbox" id="american" class="cheese" name="cheese">American
+			<input type="checkbox" id="cheddar" class="cheese" name="cheese">Cheddar
+			<input type="checkbox" id="swiss" class="cheese" name="cheese">Swiss
+			<input type="checkbox" id="gouda" class="cheese" name="cheese">Gouda
+		</div>
+
+		<div id="condimentsDivId">
+			<h4>Condiment</h4>
+			<input type="checkbox" id="mustard" class="condiment" name="condiment">Mustard
+			<input type="checkbox" id="mayo" class="condiment" name="condiment">Mayo
+			<input type="checkbox" id="siracha" class="condiment" name="condiment">Siracha
+			<input type="checkbox" id="hummus" class="condiment" name="condiment">Hummus
+		</div>		
 
 	</form>
 
+	<div id="printToDOM"></div>
 
-<script type="text/javascript"></script>
+
+<script type="text/javascript" src="./Meat.js"></script>
 </body>
 </html>
