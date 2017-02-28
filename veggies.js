@@ -4,18 +4,17 @@ var SandwichMaker = (function(maker) {
 
   // Private variable to store the different meat prices
   var veggiePrice = {
-  	tomato: 1.00,
-  	pepper: 1.00, 
-  	onions: 1.00, 
-  	pickles: 1.00
+  	"tomato": 1.00,
+  	"pepper": 1.00, 
+  	"onions": 1.00, 
+  	"pickles": 1.00
   }
 // console.log(meatPrices.turkey); // prints to console the price of the meat
 
   // Augment the original object with another method
-  maker.getVeggie = function() {
+  maker.getVeggie = function(veggieType) {
 
-    return veggiePrice;
-    // console.log(veggiePrices);
+    return veggiePrice[veggieType];
   };
 
   // Return the new, augmented object with the new method on it

@@ -13,7 +13,7 @@ var breadChooser = document.getElementById("breadChooser"); // getter of the inf
 var meatChooser = document.getElementById("meatChooser");
 var veggieChooser = document.getElementById("veggieChooser");
 var cheeseChooser = document.getElementById("cheeseChooser");
-var condimentsChooser = document.getElementById("condimentChooser");
+var condimentChooser = document.getElementById("condimentChooser");
 
 // VAriable to hold output to DOM
 
@@ -41,7 +41,32 @@ meatChooser.addEventListener("change", function(event) {
   outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
 });
 
+cheeseChooser.addEventListener("change", function(event) {
+  // Get the value chosen from the DOM
+  startingSandwhichPrice = 0;
+  console.log(event.target.value);
+  var cheeseMoney = SandwichMaker.getCheese(event.target.value);
+  SandwichMaker.addTopping(cheeseMoney);
+  outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+});
 
+veggieChooser.addEventListener("change", function(event) {
+  // Get the value chosen from the DOM
+  startingSandwhichPrice = 0;
+  console.log(event.target.value);
+  var veggieMoney = SandwichMaker.getVeggie(event.target.value);
+  SandwichMaker.addTopping(veggieMoney);
+  outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+});
+
+condimentChooser.addEventListener("change", function(event) {
+  // Get the value chosen from the DOM
+  startingSandwhichPrice = 0;
+  console.log(event.target.value);
+  var condimentMoney = SandwichMaker.getCondiment(event.target.value);
+  SandwichMaker.addTopping(condimentMoney);
+  outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+});
 
 
 
