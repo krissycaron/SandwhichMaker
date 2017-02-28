@@ -2,7 +2,7 @@
 var SandwichMaker = (function(maker) {
 
   // Private variable to store the different meat prices
-  var cheesePrices = {
+  var cheesePrice = {
   	american: 1.00,
   	cheddar: 1.00, 
   	swiss: 1.00, 
@@ -13,7 +13,7 @@ var SandwichMaker = (function(maker) {
   // Augment the original object with another method
   maker.getCheese = function() {
 
-    return cheesePrices;
+    return cheesePrice;
     // console.log(cheesePrices);
   };
 
