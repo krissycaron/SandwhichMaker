@@ -87,10 +87,12 @@ condimentChooser.addEventListener("change", function(event) {
   startingSandwhichPrice = 0;
   console.log(event.target.value);
   var condimentMoney = SandwichMaker.getCondiment(event.target.value);
-  SandwichMaker.addTopping(condimentMoney);
-  outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
-  if (eve){
-
+  if (event.target.checked === true){
+    SandwichMaker.addTopping(condimentMoney);
+    outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  } else {
+    SandwichMaker.removeTopping(condimentMoney);
+    outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
   }
 });
 
