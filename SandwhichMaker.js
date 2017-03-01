@@ -8,6 +8,9 @@ var SandwichMaker = (function() {
     addTopping: function(toppingPrice) {
       totalPrice += toppingPrice; // this equals totalPrice = totalPrice + toppingPrice;
     },
+    removeTopping: function(toppingPrice) {
+      totalPrice -= toppingPrice;
+    },
     getPrice: function() {
     	return totalPrice; 
     }

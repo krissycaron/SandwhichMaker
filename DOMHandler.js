@@ -23,31 +23,49 @@ var outputPrintToDOM = document.getElementById("printToDOM")//this is where the 
   A <select> element broadcasts a change event, so you listen for it
   and get the value of the topping from your augmented IIFE
 */
+
 breadChooser.addEventListener("change", function(event) {
   // Get the value chosen from the DOM
   startingSandwhichPrice = 0;
-  console.log(event.target.value);
+  console.log(event);
   var breadMoney = SandwichMaker.getBread(event.target.value);
-  SandwichMaker.addTopping(breadMoney);
-  outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  if (event.target.checked === true){
+    SandwichMaker.addTopping(breadMoney);
+    outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  } else {
+    SandwichMaker.removeTopping(breadMoney);
+    outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  }
 });
+
 
 meatChooser.addEventListener("change", function(event) {
   // Get the value chosen from the DOM
   startingSandwhichPrice = 0;
   console.log(event.target.value);
   var meatMoney = SandwichMaker.getMeat(event.target.value);
-  SandwichMaker.addTopping(meatMoney);
-  outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  if (event.target.checked === true) { 
+    SandwichMaker.addTopping(meatMoney);
+    outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  } else {
+    SandwichMaker.removeTopping(meatMoney);
+    outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  }
 });
+
 
 cheeseChooser.addEventListener("change", function(event) {
   // Get the value chosen from the DOM
   startingSandwhichPrice = 0;
   console.log(event.target.value);
   var cheeseMoney = SandwichMaker.getCheese(event.target.value);
-  SandwichMaker.addTopping(cheeseMoney);
-  outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  if (event.target.checked === true){
+    SandwichMaker.addTopping(cheeseMoney);
+    outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  } else {
+    SandwichMaker.removeTopping(cheeseMoney);
+    outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  }
 });
 
 veggieChooser.addEventListener("change", function(event) {
@@ -55,8 +73,13 @@ veggieChooser.addEventListener("change", function(event) {
   startingSandwhichPrice = 0;
   console.log(event.target.value);
   var veggieMoney = SandwichMaker.getVeggie(event.target.value);
-  SandwichMaker.addTopping(veggieMoney);
-  outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  if (event.target.checked === true){
+    SandwichMaker.addTopping(veggieMoney);
+    outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  } else {
+    SandwichMaker.removeTopping(veggieMoney);
+    outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  }
 });
 
 condimentChooser.addEventListener("change", function(event) {
@@ -66,17 +89,17 @@ condimentChooser.addEventListener("change", function(event) {
   var condimentMoney = SandwichMaker.getCondiment(event.target.value);
   SandwichMaker.addTopping(condimentMoney);
   outputPrintToDOM.innerHTML = SandwichMaker.getPrice();
+  if (eve){
+
+  }
 });
 
 
 
-  // if (event.target.value !== "none"){
-  // 	breadPrice += startingSandwhichPrice;
-  // }
 
 
 
-  // Determine the price of the topping chosen
+ // for the if statment to verify what checkbox has been checked, need to determine if the box is checked. 
 
   // Add the topping to the SandwichMaker to increase the total price
 
