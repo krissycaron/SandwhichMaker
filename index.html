@@ -4,6 +4,61 @@
 	<title>Sandwhich Maker</title>
 </head>
 <body>
-<script type="text/javascript"></script>
+	<h1>Create Yo' Which'</h1>
+
+	<form>
+		<div id="breadChooser">
+		<h4>Bread</h4>
+			<input type="checkbox" id="wheat" class="bread" name="bread" value="wheat">Wheat
+			<input type="checkbox" id="white" class="bread" name="bread" value="white">White 
+			<input type="checkbox" id="italianHerb" class="bread" name="bread" value="italianHerb">Italian Herb 
+			<input type="checkbox" id="sourdough" class="bread" name="bread" value="sourdough">Sourdough
+		</div>
+
+		<div id="meatChooser">
+			<h4>Meat</h4>
+			<input type="checkbox" id="ham" class="meat" name="meat" value="ham">Ham
+			<input type="checkbox" id="turkey" class="meat" name="meat" value="turkey">Turkey
+			<input type="checkbox" id="roastbeef" class="meat" name="meat" value="roastbeef">Roast Beef
+			<input type="checkbox" id="salami" class="meat" name="meat" value="salami">Salami
+		</div>
+
+		<div id="veggieChooser">
+			<h4>Veggies</h4>
+			<input type="checkbox" id="tomato" class="veggie" name="veggie" value="tomato">Tomato
+			<input type="checkbox" id="pepper" class="veggie" name="veggie" value="pepper">Peppers
+			<input type="checkbox" id="onions" class="veggie" name="veggie" value="onions">Onions
+			<input type="checkbox" id="pickle" class="veggie" name="veggie" value="pickle">Pickles
+		</div>
+
+		<div id="cheeseChooser">
+			<h4>Cheese</h4>
+			<input type="checkbox" id="american" class="cheese" name="cheese" value="american">American
+			<input type="checkbox" id="cheddar" class="cheese" name="cheese" value="cheddar">Cheddar
+			<input type="checkbox" id="swiss" class="cheese" name="cheese" value="swiss">Swiss
+			<input type="checkbox" id="gouda" class="cheese" name="cheese" value="gouda">Gouda
+		</div>
+
+		<div id="condimentChooser">
+			<h4>Condiments</h4>
+			<input type="checkbox" id="mustard" class="condiment" name="condiment" value="mustard">Mustard
+			<input type="checkbox" id="mayo" class="condiment" name="condiment" value="mayo">Mayo
+			<input type="checkbox" id="siracha" class="condiment" name="condiment" value="siracha">Siracha
+			<input type="checkbox" id="hummus" class="condiment" name="condiment" value="hummus">Hummus
+		</div>		
+
+	</form>
+
+	<div id="printToDOM"></div>
+
+
+<script type="text/javascript" src="./SandwhichMaker.js"></script>
+<script type="text/javascript" src="./Meat.js"></script>
+<script type="text/javascript" src="./bread.js"></script>
+<script type="text/javascript" src="./condiments.js"></script>
+<script type="text/javascript" src="./veggies.js"></script>
+<script type="text/javascript" src="./cheese.js"></script>
+<script type="text/javascript" src="./DOMHandler.js"></script>
+
 </body>
 </html>
